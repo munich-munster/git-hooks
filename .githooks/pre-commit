@@ -4,8 +4,9 @@
 # We'll use the current one (.githooks)
 hookdir=$(dirname $0)
 
-"$hookdir/areYouSure.sh"
-
+# "$hookdir/areYouSure.sh"
+read -p "Are you sure you want to commit this (y/n)? " answer
+echo $answer
 # Specify the hooks you want to run during the pre-commit process:
 # "$hookdir/areYouSure.sh"
 # && $hookdir/add-your-own-scripts-here"
