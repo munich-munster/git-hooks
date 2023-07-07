@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-# Check that we want to commit
+# Check that we want to commit.
 
 read -p "Are you sure you want to commit this (y/n)? " answer
 case ${answer:0:1} in
@@ -8,6 +8,6 @@ case ${answer:0:1} in
         exit 0 # If yes, success!
     ;;
     * )
-        exit 1 # If no, fail
+        exit 1 # If no, sorry yo.
     ;;
 esac

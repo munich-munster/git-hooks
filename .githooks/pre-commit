@@ -4,6 +4,8 @@
 # We'll use the current one (.githooks)
 hookdir=$(dirname $0)
 
+echo $hookdir
+
 # Specify the hooks you want to run during the pre-commit process:
-"$hookdir/areYouSure.sh"
+# "$hookdir/areYouSure.sh"
 # && $hookdir/add-your-own-scripts-here"
