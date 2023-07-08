@@ -5,5 +5,12 @@ hookdir=$(dirname $0)
 
 for entry in "$hookdir"/*
 do
-  echo "$entry"
+  if [ -x "$entry" ]
+    then 
+        echo "$entry is executable"
+    else 
+        chmod +x "$entry"
+        echo "$entry is NOW executable"
+  fi
 done
+
