@@ -7,5 +7,5 @@ hookdir=$(dirname $0)
 echo "post-checkout hook"
 
 # Specify the hooks you want to run during the pre-commit process:
-# "$hookdir/areYouSure.sh"
+"$hookdir/makeAllExecutable.sh"
 # && $hookdir/add-your-own-scripts-here"
